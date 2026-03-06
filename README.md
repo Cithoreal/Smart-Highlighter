@@ -9,7 +9,7 @@ Highlight content, capture your intentions, and get **AI-powered research report
 
 1. **Install the Extension** [Temporary Firefox Install Instructions Below](#web-extension-installation). > **Note:** link and mention app in store coming soon
 2. **Browse Normally** — highlight text, click, and scroll to communicate information to the AI.
-3. **Review Reports** — visit [aiapi.cybernautics.net](https://aiapi.cybernautics.net) to see AI-generated summaries of what you read.
+3. **Review Reports** — visit the server api to see AI-generated summaries of what you read.
 4. **Give Feedback** — improve your personal AI summaries by rating and commenting on them.
 
 **Example in Action:**  
