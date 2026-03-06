@@ -1,0 +1,45 @@
+# Workspace-wide ignores for Smart-Highlighter monorepo
+
+# OS/editor metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python artifacts
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.coverage*
+**/.venv/
+**/venv/
+**/env/
+
+# Node / browser-extension artifacts
+**/node_modules/
+**/dist/
+**/build/
+**/*.tsbuildinfo
+
+# Environment files (keep templates)
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.*.example
+
+# Certificates / private keys
+**/.certs/
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/*.jks
+
+# Runtime logs / temp
+**/*.log
+**/logs/
+
+# Backend local runtime data
+smart-highlighter-backend/data/
