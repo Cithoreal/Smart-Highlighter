@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI‑API Reports</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css'>
+</head>
+<body class='markdown-body'>
+  <h1>Topic summaries</h1>
+  <ul>
+    {% for file in topic_files %}
+      <li><a href='/api/topic_summary/latest?file={{ file.name }}'>{{ file.name }}</a></li>
+    {% endfor %}
+  </ul>
+  <h1>Full reports</h1>
+  <ul>
+    {% for file in full_files %}
+      <li><a href='/api/full_summary/latest?file={{ file.name }}'>{{ file.name }}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

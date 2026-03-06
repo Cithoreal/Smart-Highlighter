@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+openai
+python-dotenv
+pydantic-settings
+watchdog
+schedule
+tqdm
+markdown
+apscheduler
+jinja2
+tiktoken
+anthropic
+google-genai
+pyyaml   
+ndjson
+cryptography

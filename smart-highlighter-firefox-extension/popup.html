@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Name:</h2>
+  <input id="user_id" type="text" placeholder="name..."  />
+
+  <h2>Hosting</h2>
+  <select id="host_option">
+    <option value="local_https">Local HTTPS</option>
+    <option value="local_http">Local HTTP</option>
+    <option value="remote">Remote</option>
+  </select>
+
+  <h2>Why are you here?</h2>
+  <input id="intent" type="text" placeholder="e.g. research, leisure" />
+
+  <h2>Rate this page</h2>
+  <select id="rating">
+    <option value="">-- Choose --</option>
+    <option value="5">❤️ Love</option>
+    <option value="4">🙂 Like</option>
+    <option value="3">😐 Neutral</option>
+    <option value="2">😕 Dislike</option>
+    <option value="1">👎 Hate</option>
+  </select>
+
+  <button id="save">Save</button>
+  <button id="export">Export Sessions 🔽</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

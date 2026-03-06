@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Mindful Browser Tracker",
+  "version": "0.1",
+  "description": "Tracks browsing activity with intent, time, rating, scroll metrics, and can export data.",
+  "permissions": [
+    "idle",
+    "tabs",
+    "activeTab",
+    "storage",
+    "webNavigation",
+    "downloads",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}

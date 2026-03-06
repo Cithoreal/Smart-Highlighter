@@ -1,0 +1,11 @@
+services:
+  fastapi:
+    build:
+      dockerfile: Dockerfile
+    container_name: fastapi
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - ./data/summaries:/app/summaries
+    ports:
+      - "8443:8443"
